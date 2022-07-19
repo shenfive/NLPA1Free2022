@@ -13,6 +13,14 @@
 		3BA0FB2728865FDD00582892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0FB2528865FDD00582892 /* Main.storyboard */; };
 		3BA0FB2928865FDE00582892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0FB2828865FDE00582892 /* Assets.xcassets */; };
 		3BA0FB2C28865FDE00582892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0FB2A28865FDE00582892 /* LaunchScreen.storyboard */; };
+		3BA0FB3428865FF300582892 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0FB3328865FF300582892 /* GoogleService-Info.plist */; };
+		3BA0FB3A2886720200582892 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA0FB392886720200582892 /* FirebaseAnalytics */; };
+		3BA0FB3C2886720200582892 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA0FB3B2886720200582892 /* FirebaseAuth */; };
+		3BA0FB3E2886720200582892 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA0FB3D2886720200582892 /* FirebaseDatabase */; };
+		3BA0FB402886720200582892 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA0FB3F2886720200582892 /* FirebaseMessaging */; };
+		3BA0FB42288674FE00582892 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0FB41288674FE00582892 /* InfoViewController.swift */; };
+		3BA0FB44288675CB00582892 /* nlpfreeinfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0FB43288675CB00582892 /* nlpfreeinfo.html */; };
+		3BA0FB4628868BAF00582892 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0FB4528868BAF00582892 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,13 @@
 		3BA0FB2828865FDE00582892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BA0FB2B28865FDE00582892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BA0FB2D28865FDE00582892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA0FB3328865FF300582892 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BA0FB41288674FE00582892 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3BA0FB43288675CB00582892 /* nlpfreeinfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nlpfreeinfo.html; sourceTree = "<group>"; };
+		3BA0FB4528868BAF00582892 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		6F19A5FD6A4D32836A6F6864 /* Pods-NLPA1Free.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLPA1Free.release.xcconfig"; path = "Target Support Files/Pods-NLPA1Free/Pods-NLPA1Free.release.xcconfig"; sourceTree = "<group>"; };
+		B48C9A2B2F2FDAF6E55E5BDC /* Pods-NLPA1Free.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLPA1Free.debug.xcconfig"; path = "Target Support Files/Pods-NLPA1Free/Pods-NLPA1Free.debug.xcconfig"; sourceTree = "<group>"; };
+		DA247C4C71554B3920C4808E /* Pods_NLPA1Free.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLPA1Free.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +46,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA0FB402886720200582892 /* FirebaseMessaging in Frameworks */,
+				3BA0FB3E2886720200582892 /* FirebaseDatabase in Frameworks */,
+				3BA0FB3A2886720200582892 /* FirebaseAnalytics in Frameworks */,
+				3BA0FB3C2886720200582892 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0053BEDDDCA04CA161345CD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B48C9A2B2F2FDAF6E55E5BDC /* Pods-NLPA1Free.debug.xcconfig */,
+				6F19A5FD6A4D32836A6F6864 /* Pods-NLPA1Free.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3BA0FB1328865FDD00582892 = {
 			isa = PBXGroup;
 			children = (
 				3BA0FB1E28865FDD00582892 /* NLPA1Free */,
 				3BA0FB1D28865FDD00582892 /* Products */,
+				0053BEDDDCA04CA161345CD4 /* Pods */,
+				E73BD4DDA18A350160D75485 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +90,23 @@
 				3BA0FB2128865FDD00582892 /* SceneDelegate.swift */,
 				3BA0FB2328865FDD00582892 /* ViewController.swift */,
 				3BA0FB2528865FDD00582892 /* Main.storyboard */,
+				3BA0FB3328865FF300582892 /* GoogleService-Info.plist */,
 				3BA0FB2828865FDE00582892 /* Assets.xcassets */,
+				3BA0FB43288675CB00582892 /* nlpfreeinfo.html */,
 				3BA0FB2A28865FDE00582892 /* LaunchScreen.storyboard */,
 				3BA0FB2D28865FDE00582892 /* Info.plist */,
+				3BA0FB41288674FE00582892 /* InfoViewController.swift */,
+				3BA0FB4528868BAF00582892 /* TestViewController.swift */,
 			);
 			path = NLPA1Free;
+			sourceTree = "<group>";
+		};
+		E73BD4DDA18A350160D75485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA247C4C71554B3920C4808E /* Pods_NLPA1Free.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +116,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BA0FB3028865FDE00582892 /* Build configuration list for PBXNativeTarget "NLPA1Free" */;
 			buildPhases = (
+				8D4D3BF7C1C84A6654E86FBF /* [CP] Check Pods Manifest.lock */,
 				3BA0FB1828865FDD00582892 /* Sources */,
 				3BA0FB1928865FDD00582892 /* Frameworks */,
 				3BA0FB1A28865FDD00582892 /* Resources */,
@@ -83,6 +126,12 @@
 			dependencies = (
 			);
 			name = NLPA1Free;
+			packageProductDependencies = (
+				3BA0FB392886720200582892 /* FirebaseAnalytics */,
+				3BA0FB3B2886720200582892 /* FirebaseAuth */,
+				3BA0FB3D2886720200582892 /* FirebaseDatabase */,
+				3BA0FB3F2886720200582892 /* FirebaseMessaging */,
+			);
 			productName = NLPA1Free;
 			productReference = 3BA0FB1C28865FDD00582892 /* NLPA1Free.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 3BA0FB1328865FDD00582892;
+			packageReferences = (
+				3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3BA0FB1D28865FDD00582892 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BA0FB2C28865FDE00582892 /* LaunchScreen.storyboard in Resources */,
+				3BA0FB44288675CB00582892 /* nlpfreeinfo.html in Resources */,
+				3BA0FB3428865FF300582892 /* GoogleService-Info.plist in Resources */,
 				3BA0FB2928865FDE00582892 /* Assets.xcassets in Resources */,
 				3BA0FB2728865FDD00582892 /* Main.storyboard in Resources */,
 			);
@@ -133,13 +187,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8D4D3BF7C1C84A6654E86FBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NLPA1Free-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BA0FB1828865FDD00582892 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA0FB4628868BAF00582892 /* TestViewController.swift in Sources */,
 				3BA0FB2428865FDD00582892 /* ViewController.swift in Sources */,
 				3BA0FB2028865FDD00582892 /* AppDelegate.swift in Sources */,
+				3BA0FB42288674FE00582892 /* InfoViewController.swift in Sources */,
 				3BA0FB2228865FDD00582892 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +363,7 @@
 		};
 		3BA0FB3128865FDE00582892 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B48C9A2B2F2FDAF6E55E5BDC /* Pods-NLPA1Free.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,8 +375,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +393,7 @@
 		};
 		3BA0FB3228865FDE00582892 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F19A5FD6A4D32836A6F6864 /* Pods-NLPA1Free.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +405,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +443,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 9.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BA0FB392886720200582892 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3BA0FB3B2886720200582892 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3BA0FB3D2886720200582892 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3BA0FB3F2886720200582892 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BA0FB1428865FDD00582892 /* Project object */;
 }

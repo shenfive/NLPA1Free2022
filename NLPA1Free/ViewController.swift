@@ -11,9 +11,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
 
 
+    @IBAction func goTest(_ sender: Any) {
+        performSegue(withIdentifier: "goTest", sender: self)
+    }
+    @IBAction func goInfo(_ sender: Any) {
+        performSegue(withIdentifier: "goInfo", sender: self)
+    }
 }
 
