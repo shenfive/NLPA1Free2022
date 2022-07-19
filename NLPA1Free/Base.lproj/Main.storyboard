@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="9Ux-h1-vtK">
             <objects>
-                <viewController id="vgG-dI-jhx" sceneMemberID="viewController">
+                <viewController id="vgG-dI-jhx" customClass="TestViewController" customModule="NLPA1Free" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nr4-P0-ild">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
