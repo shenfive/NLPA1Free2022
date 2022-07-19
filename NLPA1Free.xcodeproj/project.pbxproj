@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3627C82886A5C200B4098C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3B3627C72886A5C200B4098C /* FirebaseAnalytics */; };
+		3B3627CA2886A5C200B4098C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3B3627C92886A5C200B4098C /* FirebaseAuth */; };
+		3B3627CC2886A5C200B4098C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3B3627CB2886A5C200B4098C /* FirebaseDatabase */; };
 		3BA0FB2028865FDD00582892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0FB1F28865FDD00582892 /* AppDelegate.swift */; };
 		3BA0FB2228865FDD00582892 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0FB2128865FDD00582892 /* SceneDelegate.swift */; };
 		3BA0FB2428865FDD00582892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0FB2328865FDD00582892 /* ViewController.swift */; };
@@ -14,15 +17,11 @@
 		3BA0FB2928865FDE00582892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0FB2828865FDE00582892 /* Assets.xcassets */; };
 		3BA0FB2C28865FDE00582892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0FB2A28865FDE00582892 /* LaunchScreen.storyboard */; };
 		3BA0FB3428865FF300582892 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0FB3328865FF300582892 /* GoogleService-Info.plist */; };
-		3BA0FB3A2886720200582892 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA0FB392886720200582892 /* FirebaseAnalytics */; };
-		3BA0FB3C2886720200582892 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA0FB3B2886720200582892 /* FirebaseAuth */; };
-		3BA0FB3E2886720200582892 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA0FB3D2886720200582892 /* FirebaseDatabase */; };
-		3BA0FB402886720200582892 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA0FB3F2886720200582892 /* FirebaseMessaging */; };
 		3BA0FB42288674FE00582892 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0FB41288674FE00582892 /* InfoViewController.swift */; };
 		3BA0FB44288675CB00582892 /* nlpfreeinfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0FB43288675CB00582892 /* nlpfreeinfo.html */; };
 		3BA0FB4628868BAF00582892 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0FB4528868BAF00582892 /* TestViewController.swift */; };
-		3BA0FB4928868CFF00582892 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA0FB4828868CFF00582892 /* Reachability */; };
 		3BA0FB4B28868E8700582892 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0FB4A28868E8700582892 /* AnalyticsViewController.swift */; };
+		7E0715687C9109F9DC7C765E /* Pods_NLPA1Free.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA247C4C71554B3920C4808E /* Pods_NLPA1Free.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,11 +48,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA0FB402886720200582892 /* FirebaseMessaging in Frameworks */,
-				3BA0FB3E2886720200582892 /* FirebaseDatabase in Frameworks */,
-				3BA0FB4928868CFF00582892 /* Reachability in Frameworks */,
-				3BA0FB3A2886720200582892 /* FirebaseAnalytics in Frameworks */,
-				3BA0FB3C2886720200582892 /* FirebaseAuth in Frameworks */,
+				3B3627C82886A5C200B4098C /* FirebaseAnalytics in Frameworks */,
+				3B3627CA2886A5C200B4098C /* FirebaseAuth in Frameworks */,
+				3B3627CC2886A5C200B4098C /* FirebaseDatabase in Frameworks */,
+				7E0715687C9109F9DC7C765E /* Pods_NLPA1Free.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +123,7 @@
 				3BA0FB1828865FDD00582892 /* Sources */,
 				3BA0FB1928865FDD00582892 /* Frameworks */,
 				3BA0FB1A28865FDD00582892 /* Resources */,
+				6EB11D0ECF671BD311063209 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +131,9 @@
 			);
 			name = NLPA1Free;
 			packageProductDependencies = (
-				3BA0FB392886720200582892 /* FirebaseAnalytics */,
-				3BA0FB3B2886720200582892 /* FirebaseAuth */,
-				3BA0FB3D2886720200582892 /* FirebaseDatabase */,
-				3BA0FB3F2886720200582892 /* FirebaseMessaging */,
-				3BA0FB4828868CFF00582892 /* Reachability */,
+				3B3627C72886A5C200B4098C /* FirebaseAnalytics */,
+				3B3627C92886A5C200B4098C /* FirebaseAuth */,
+				3B3627CB2886A5C200B4098C /* FirebaseDatabase */,
 			);
 			productName = NLPA1Free;
 			productReference = 3BA0FB1C28865FDD00582892 /* NLPA1Free.app */;
@@ -167,8 +164,7 @@
 			);
 			mainGroup = 3BA0FB1328865FDD00582892;
 			packageReferences = (
-				3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				3BA0FB4728868CFF00582892 /* XCRemoteSwiftPackageReference "Reachability" */,
+				3B3627C62886A5C200B4098C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 3BA0FB1D28865FDD00582892 /* Products */;
 			projectDirPath = "";
@@ -195,6 +191,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6EB11D0ECF671BD311063209 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NLPA1Free/Pods-NLPA1Free-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NLPA1Free/Pods-NLPA1Free-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NLPA1Free/Pods-NLPA1Free-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8D4D3BF7C1C84A6654E86FBF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,7 +466,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		3B3627C62886A5C200B4098C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -461,41 +474,23 @@
 				minimumVersion = 9.3.0;
 			};
 		};
-		3BA0FB4728868CFF00582892 /* XCRemoteSwiftPackageReference "Reachability" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3BA0FB392886720200582892 /* FirebaseAnalytics */ = {
+		3B3627C72886A5C200B4098C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 3B3627C62886A5C200B4098C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		3BA0FB3B2886720200582892 /* FirebaseAuth */ = {
+		3B3627C92886A5C200B4098C /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 3B3627C62886A5C200B4098C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		3BA0FB3D2886720200582892 /* FirebaseDatabase */ = {
+		3B3627CB2886A5C200B4098C /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 3B3627C62886A5C200B4098C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
-		};
-		3BA0FB3F2886720200582892 /* FirebaseMessaging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3BA0FB382886720200582892 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
-		};
-		3BA0FB4828868CFF00582892 /* Reachability */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3BA0FB4728868CFF00582892 /* XCRemoteSwiftPackageReference "Reachability" */;
-			productName = Reachability;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

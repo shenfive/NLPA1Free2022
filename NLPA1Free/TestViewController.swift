@@ -194,6 +194,8 @@ class TestViewController: UIViewController {
                 print("由 Wi-Fi 網路下載")
             case .cellular:
                 print("由手機網路下載")
+            default:
+                break
             }
         }
     
