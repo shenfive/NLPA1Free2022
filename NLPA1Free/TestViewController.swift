@@ -36,18 +36,26 @@ class TestViewController: UIViewController {
     @IBOutlet weak var ans1: UIButton!
     @IBOutlet weak var ans2: UIButton!
     @IBOutlet weak var ans3: UIButton!
+
     
     @IBOutlet weak var answerArea: UIView!
     
     
     override func viewDidLoad() {
         showWaiting()
+        qustion.text = ""
         
         answerArea.isHidden = true
 
         ans1.titleLabel?.numberOfLines = 2
         ans2.titleLabel?.numberOfLines = 2
         ans3.titleLabel?.numberOfLines = 2
+        ans1.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.25)
+        ans1.layer.cornerRadius = 5
+        ans2.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.25)
+        ans2.layer.cornerRadius = 5
+        ans3.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.25)
+        ans3.layer.cornerRadius = 5
         
         
         super.viewDidLoad()
@@ -62,6 +70,11 @@ class TestViewController: UIViewController {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
 
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -94,6 +107,7 @@ class TestViewController: UIViewController {
         
         let 目前題號 = 問題序[目前問題指標]
         let 目前題目 = qustions.object(at: 目前題號) as! NSDictionary
+       
         
         let 答案陣列 = [目前題目.object(forKey: "a") as! String ,
                         目前題目.object(forKey: "b") as! String,
@@ -104,6 +118,7 @@ class TestViewController: UIViewController {
 
         UIView.animate(withDuration: 1.4, delay: 0.1,  animations: {
             self.qustion.alpha = 1
+            
         }, completion: { (complete) in
             UIView.animate(withDuration: 1.2, delay: 0.2, animations: {
                 self.answerArea.isHidden = false
@@ -116,7 +131,7 @@ class TestViewController: UIViewController {
         })
         
         
-        self.qustion.text = 目前題目.object(forKey: "qustion") as? String
+        self.qustion.text = ((目前題目.object(forKey: "qustion") as? String) ?? "") + "\n(\(目前問題指標 + 1)/\(最大問題數))"
         ans1.tag = 答案序[0]
         ans1.setTitle(答案陣列[ans1.tag], for: .normal)
         ans2.tag = 答案序[1]
@@ -127,7 +142,7 @@ class TestViewController: UIViewController {
         
         let utterance = AVSpeechUtterance(string: self.qustion.text!)
         utterance.rate = 0.53
-        utterance.pitchMultiplier = 0.8
+        utterance.pitchMultiplier = 1
         
         //強制中文語音
         let voices = AVSpeechSynthesisVoice.speechVoices()
