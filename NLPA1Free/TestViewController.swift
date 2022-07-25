@@ -19,6 +19,7 @@ class TestViewController: UIViewController {
 //    var vpadInterstitial:VpadnInterstitial?
     
     
+    @IBOutlet weak var numberOfQustions: UILabel!
     var qustions:NSMutableArray = NSMutableArray()
     var rechablity:Reachability? = nil //= Reachability.init()
     let 最大問題數 = 19
@@ -131,7 +132,8 @@ class TestViewController: UIViewController {
         })
         
         
-        self.qustion.text = ((目前題目.object(forKey: "qustion") as? String) ?? "") + "\n(\(目前問題指標 + 1)/\(最大問題數))"
+        self.qustion.text = ((目前題目.object(forKey: "qustion") as? String) ?? "")// + "\n(\(目前問題指標 + 1)/\(最大問題數))"
+        numberOfQustions.text = "\(目前問題指標 + 1)/\(最大問題數)"
         ans1.tag = 答案序[0]
         ans1.setTitle(答案陣列[ans1.tag], for: .normal)
         ans2.tag = 答案序[1]

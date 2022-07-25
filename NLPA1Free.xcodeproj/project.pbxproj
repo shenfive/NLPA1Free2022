@@ -40,6 +40,7 @@
 		3BA0FB4A28868E8700582892 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		6F19A5FD6A4D32836A6F6864 /* Pods-NLPA1Free.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLPA1Free.release.xcconfig"; path = "Target Support Files/Pods-NLPA1Free/Pods-NLPA1Free.release.xcconfig"; sourceTree = "<group>"; };
 		B48C9A2B2F2FDAF6E55E5BDC /* Pods-NLPA1Free.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLPA1Free.debug.xcconfig"; path = "Target Support Files/Pods-NLPA1Free/Pods-NLPA1Free.debug.xcconfig"; sourceTree = "<group>"; };
+		BA0D3A7D288ED7C000F5E887 /* NLPA1Free.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NLPA1Free.entitlements; sourceTree = "<group>"; };
 		DA247C4C71554B3920C4808E /* Pods_NLPA1Free.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLPA1Free.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +89,7 @@
 		3BA0FB1E28865FDD00582892 /* NLPA1Free */ = {
 			isa = PBXGroup;
 			children = (
+				BA0D3A7D288ED7C000F5E887 /* NLPA1Free.entitlements */,
 				3BA0FB1F28865FDD00582892 /* AppDelegate.swift */,
 				3BA0FB2128865FDD00582892 /* SceneDelegate.swift */,
 				3BA0FB2328865FDD00582892 /* ViewController.swift */,
@@ -388,8 +390,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NLPA1Free/NLPA1Free.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NLPA1Free/Info.plist;
@@ -398,7 +401,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,6 +410,7 @@
 				MARKETING_VERSION = 1.22;
 				PRODUCT_BUNDLE_IDENTIFIER = idv.SJW.NLPA1Free;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,8 +423,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NLPA1Free/NLPA1Free.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NLPA1Free/Info.plist;
@@ -429,7 +434,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,6 +443,7 @@
 				MARKETING_VERSION = 1.22;
 				PRODUCT_BUNDLE_IDENTIFIER = idv.SJW.NLPA1Free;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

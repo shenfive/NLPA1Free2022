@@ -172,12 +172,23 @@
                                     <constraint firstAttribute="trailing" secondItem="MbI-B1-pxy" secondAttribute="trailing" constant="10" id="tZ9-O9-Htd"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQm-Km-fU1">
+                                <rect key="frame" x="30" y="78" width="33" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ExE-KU-sz0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dAK-J2-jax"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="47m-I1-Wsp" firstAttribute="leading" secondItem="dAK-J2-jax" secondAttribute="leading" constant="20" id="Gpm-0M-sQa"/>
                             <constraint firstItem="dAK-J2-jax" firstAttribute="trailing" secondItem="47m-I1-Wsp" secondAttribute="trailing" constant="20" id="HSp-l6-ogq"/>
+                            <constraint firstItem="cQm-Km-fU1" firstAttribute="centerY" secondItem="mTI-07-fqX" secondAttribute="centerY" id="QHh-XL-leu"/>
+                            <constraint firstItem="cQm-Km-fU1" firstAttribute="leading" secondItem="dAK-J2-jax" secondAttribute="leading" constant="30" id="SvC-6D-uJx"/>
                             <constraint firstItem="2SI-dw-QhQ" firstAttribute="top" secondItem="dAK-J2-jax" secondAttribute="top" constant="10" id="g0y-yF-dnK"/>
                             <constraint firstItem="2SI-dw-QhQ" firstAttribute="leading" secondItem="dAK-J2-jax" secondAttribute="leading" constant="20" id="iEU-Td-pIe"/>
                             <constraint firstItem="47m-I1-Wsp" firstAttribute="top" secondItem="2SI-dw-QhQ" secondAttribute="bottom" constant="10" id="inu-hs-qg0"/>
@@ -193,6 +204,7 @@
                         <outlet property="ans2" destination="aWl-dC-RY4" id="kTF-l0-r8a"/>
                         <outlet property="ans3" destination="MbI-B1-pxy" id="LkP-h3-P61"/>
                         <outlet property="answerArea" destination="47m-I1-Wsp" id="07q-yj-YDu"/>
+                        <outlet property="numberOfQustions" destination="cQm-Km-fU1" id="uwc-R0-lyq"/>
                         <outlet property="qustion" destination="2we-PA-kzw" id="gQv-8x-ba0"/>
                         <segue destination="kiI-6k-Aoh" kind="show" identifier="goAnalytics" id="I95-fs-aAV"/>
                     </connections>
